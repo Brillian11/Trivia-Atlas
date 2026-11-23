@@ -1,0 +1,641 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Authenticated user's custom profile and personal trivia progress statistics.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Firebase Auth UID of the profile owner."
+        },
+        "displayName": {
+          "type": "string",
+          "description": "User-customizable display name (2-30 chars)."
+        },
+        "handle": {
+          "type": "string",
+          "description": "User-customizable explorer handle (2-24 chars)."
+        },
+        "avatarId": {
+          "type": "string",
+          "enum": ["compass", "owl", "telescope", "globe", "quill", "atom"],
+          "description": "Selected illustrated avatar emblem identifier."
+        },
+        "bio": {
+          "type": "string",
+          "description": "Short personal bio (0-140 chars)."
+        },
+        "totalScore": {
+          "type": "integer",
+          "description": "Cumulative score earned across all completed trivia rounds."
+        },
+        "highScore": {
+          "type": "integer",
+          "description": "Best single-round score achieved."
+        },
+        "gamesPlayed": {
+          "type": "integer",
+          "description": "Total completed trivia rounds."
+        },
+        "totalCorrect": {
+          "type": "integer",
+          "description": "Cumulative number of correctly answered questions."
+        },
+        "totalAnswered": {
+          "type": "integer",
+          "description": "Cumulative number of answered questions."
+        },
+        "bestStreak": {
+          "type": "integer",
+          "description": "Longest consecutive correct answer streak."
+        },
+        "favoriteCategory": {
+          "type": "string",
+          "description": "Most frequently played or favorite trivia category key."
+        },
+        "dailyStreak": {
+          "type": "integer",
+          "description": "Current consecutive daily app-open streak."
+        },
+        "bestDailyStreak": {
+          "type": "integer",
+          "description": "All-time highest daily app-open streak."
+        },
+        "streakFreezes": {
+          "type": "integer",
+          "description": "Saved Streak Freeze tokens (0-3) earned from leveling up, earning >=10000 XP in a day, or completing 3 daily objectives for 3 consecutive days."
+        },
+        "lastActiveDay": {
+          "type": "string",
+          "description": "Local calendar date key (yyyy-MM-dd) of last recorded daily check-in."
+        },
+        "lastFreezeUsedDay": {
+          "type": "string",
+          "description": "Local calendar date key (yyyy-MM-dd) when a Streak Freeze saved the streak."
+        },
+        "dailyXpEarned": {
+          "type": "integer",
+          "description": "XP accumulated during dailyXpDate toward the daily Streak Freeze goal."
+        },
+        "dailyXpDate": {
+          "type": "string",
+          "description": "Local calendar date key (yyyy-MM-dd) corresponding to dailyXpEarned."
+        },
+        "dailyXpFreezeGrantedDate": {
+          "type": "string",
+          "description": "Date key when the daily high-XP Streak Freeze reward was granted."
+        },
+        "objectiveDayKey": {
+          "type": "string",
+          "description": "Local calendar date key (yyyy-MM-dd) for today's daily objective progress."
+        },
+        "completedObjectiveIds": {
+          "type": "array",
+          "description": "Scenario IDs (up to 3) completed on objectiveDayKey."
+        },
+        "dailyRoundsCompleted": {
+          "type": "integer",
+          "description": "Number of trivia rounds completed on objectiveDayKey."
+        },
+        "dailyObjectiveStreak": {
+          "type": "integer",
+          "description": "Consecutive days (0-3) completing all 3 daily objectives."
+        },
+        "lastObjectiveCompletedDay": {
+          "type": "string",
+          "description": "Most recent date key when all 3 daily objectives were finished."
+        },
+        "objectiveFreezeGrantedDate": {
+          "type": "string",
+          "description": "Date key when the 3-day consecutive objective streak Freeze reward was granted."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp (FieldValue.serverTimestamp()) when profile was created."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp (FieldValue.serverTimestamp()) when profile was last updated."
+        }
+      },
+      "required": [
+        "userId",
+        "displayName",
+        "handle",
+        "avatarId",
+        "bio",
+        "totalScore",
+        "highScore",
+        "gamesPlayed",
+        "totalCorrect",
+        "totalAnswered",
+        "bestStreak",
+        "favoriteCategory",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "QuizSession": {
+      "title": "QuizSession",
+      "description": "Immutable historical record of a completed trivia round for personal progress tracking.",
+      "type": "object",
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "Category key or 'mixed' / 'picture_atlas'."
+        },
+        "difficulty": {
+          "type": "string",
+          "enum": ["all", "easy", "medium", "hard"],
+          "description": "Selected difficulty filter for the round."
+        },
+        "mode": {
+          "type": "string",
+          "enum": ["standard", "picture", "guess"],
+          "description": "Game mode played."
+        },
+        "score": {
+          "type": "integer",
+          "description": "Points earned in this round."
+        },
+        "correctCount": {
+          "type": "integer",
+          "description": "Correct answers in this round."
+        },
+        "totalQuestions": {
+          "type": "integer",
+          "description": "Total questions in this round."
+        },
+        "bestStreak": {
+          "type": "integer",
+          "description": "Longest streak within this round."
+        },
+        "durationSeconds": {
+          "type": "integer",
+          "description": "Round duration in seconds."
+        },
+        "playedOffline": {
+          "type": "boolean",
+          "description": "Whether the round was played from the offline Room cache."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp (FieldValue.serverTimestamp()) when session was recorded."
+        }
+      },
+      "required": [
+        "category",
+        "difficulty",
+        "mode",
+        "score",
+        "correctCount",
+        "totalQuestions",
+        "bestStreak",
+        "durationSeconds",
+        "playedOffline",
+        "createdAt"
+      ]
+    },
+    "LeaderboardEntry": {
+      "title": "LeaderboardEntry",
+      "description": "Public non-PII global leaderboard entry keyed by user UID.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Firebase Auth UID of the player."
+        },
+        "displayName": {
+          "type": "string",
+          "description": "Public display name."
+        },
+        "handle": {
+          "type": "string",
+          "description": "Public explorer handle."
+        },
+        "avatarId": {
+          "type": "string",
+          "enum": ["compass", "owl", "telescope", "globe", "quill", "atom"],
+          "description": "Illustrated avatar emblem identifier."
+        },
+        "totalScore": {
+          "type": "integer",
+          "description": "Cumulative score for global ranking."
+        },
+        "highScore": {
+          "type": "integer",
+          "description": "Highest single-round score."
+        },
+        "gamesPlayed": {
+          "type": "integer",
+          "description": "Total rounds completed."
+        },
+        "accuracyPercent": {
+          "type": "integer",
+          "description": "Overall accuracy percentage (0-100)."
+        },
+        "bestStreak": {
+          "type": "integer",
+          "description": "All-time best answer streak."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp (FieldValue.serverTimestamp()) when entry was created."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp (FieldValue.serverTimestamp()) when entry was last updated."
+        }
+      },
+      "required": [
+        "userId",
+        "displayName",
+        "handle",
+        "avatarId",
+        "totalScore",
+        "highScore",
+        "gamesPlayed",
+        "accuracyPercent",
+        "bestStreak",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "WeeklyRankingEntry": {
+      "title": "WeeklyRankingEntry",
+      "description": "Public weekly ranking entry scoped to a cycleId anchored at Sunday 12:00 PM GMT.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Firebase Auth UID of the player."
+        },
+        "cycleId": {
+          "type": "string",
+          "description": "Sunday 12:00 PM GMT weekly cycle identifier (yyyy-MM-dd_1200Z)."
+        },
+        "displayName": {
+          "type": "string",
+          "description": "Public display name."
+        },
+        "handle": {
+          "type": "string",
+          "description": "Public explorer handle."
+        },
+        "avatarId": {
+          "type": "string",
+          "enum": ["compass", "owl", "telescope", "globe", "quill", "atom"],
+          "description": "Illustrated avatar emblem identifier."
+        },
+        "weeklyXp": {
+          "type": "integer",
+          "description": "Weekly ranking XP earned during this cycle, resetting every Sunday 12:00 PM GMT."
+        },
+        "highScore": {
+          "type": "integer",
+          "description": "Best single-round score in this weekly cycle."
+        },
+        "gamesPlayed": {
+          "type": "integer",
+          "description": "Rounds completed in this weekly cycle."
+        },
+        "correctCount": {
+          "type": "integer",
+          "description": "Correct answers in this weekly cycle."
+        },
+        "answeredCount": {
+          "type": "integer",
+          "description": "Total answered questions in this weekly cycle."
+        },
+        "accuracyPercent": {
+          "type": "integer",
+          "description": "Weekly accuracy percentage (0-100)."
+        },
+        "bestStreak": {
+          "type": "integer",
+          "description": "Best answer streak in this weekly cycle."
+        },
+        "lifetimeXp": {
+          "type": "integer",
+          "description": "Player's cumulative lifetime XP (never resets)."
+        },
+        "level": {
+          "type": "integer",
+          "description": "Player's lifetime Explorer Level derived from cumulative lifetime XP."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when weekly entry was created."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when weekly entry was last updated."
+        }
+      },
+      "required": [
+        "userId",
+        "cycleId",
+        "displayName",
+        "handle",
+        "avatarId",
+        "weeklyXp",
+        "highScore",
+        "gamesPlayed",
+        "correctCount",
+        "answeredCount",
+        "accuracyPercent",
+        "bestStreak",
+        "lifetimeXp",
+        "level",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "BattleRoom": {
+      "title": "BattleRoom",
+      "description": "Multiplayer trivia battle room keyed by 6-character room code containing host-selected topics and shared frozen questions.",
+      "type": "object",
+      "properties": {
+        "roomCode": {
+          "type": "string",
+          "description": "6-character uppercase alphanumeric room code matching document ID."
+        },
+        "hostUserId": {
+          "type": "string",
+          "description": "Firebase Auth UID of the room host."
+        },
+        "hostDisplayName": {
+          "type": "string",
+          "description": "Display name of the host."
+        },
+        "hostAvatarId": {
+          "type": "string",
+          "enum": ["compass", "owl", "telescope", "globe", "quill", "atom"],
+          "description": "Host emblem avatar ID."
+        },
+        "topics": {
+          "type": "array",
+          "description": "Host-selected trivia category keys (1-12)."
+        },
+        "difficulty": {
+          "type": "string",
+          "enum": ["all", "easy", "medium", "hard"],
+          "description": "Selected difficulty for the battle."
+        },
+        "mode": {
+          "type": "string",
+          "enum": ["standard", "picture", "guess"],
+          "description": "Battle interaction mode."
+        },
+        "questionCount": {
+          "type": "integer",
+          "description": "Number of shared questions in the battle (5-20)."
+        },
+        "languageCode": {
+          "type": "string",
+          "enum": ["en", "es", "in"],
+          "description": "Language code used to generate/select the shared question set."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["waiting", "active", "finished"],
+          "description": "Room lifecycle state."
+        },
+        "memberUids": {
+          "type": "array",
+          "description": "UIDs of players who joined the room (1-12)."
+        },
+        "questions": {
+          "type": "array",
+          "description": "Frozen shared question list so all room participants face the exact same questions."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp (FieldValue.serverTimestamp()) when room was created."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp (FieldValue.serverTimestamp()) when room was last updated."
+        }
+      },
+      "required": [
+        "roomCode",
+        "hostUserId",
+        "hostDisplayName",
+        "hostAvatarId",
+        "topics",
+        "difficulty",
+        "mode",
+        "questionCount",
+        "languageCode",
+        "status",
+        "memberUids",
+        "questions",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "BattleParticipant": {
+      "title": "BattleParticipant",
+      "description": "Per-player live scoreboard state inside a battle room, keyed by participant userId.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Firebase Auth UID of the participant."
+        },
+        "displayName": {
+          "type": "string",
+          "description": "Participant display name."
+        },
+        "handle": {
+          "type": "string",
+          "description": "Participant explorer handle."
+        },
+        "avatarId": {
+          "type": "string",
+          "enum": ["compass", "owl", "telescope", "globe", "quill", "atom"],
+          "description": "Participant emblem avatar ID."
+        },
+        "score": {
+          "type": "integer",
+          "description": "Live battle score."
+        },
+        "correctCount": {
+          "type": "integer",
+          "description": "Questions answered correctly so far."
+        },
+        "answeredCount": {
+          "type": "integer",
+          "description": "Total questions answered so far."
+        },
+        "currentStreak": {
+          "type": "integer",
+          "description": "Current consecutive correct answer streak."
+        },
+        "bestStreak": {
+          "type": "integer",
+          "description": "Highest streak achieved in this battle."
+        },
+        "durationSeconds": {
+          "type": "integer",
+          "description": "Elapsed play time in seconds."
+        },
+        "finished": {
+          "type": "boolean",
+          "description": "Whether the participant has completed all questions in the battle."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp (FieldValue.serverTimestamp()) when joined."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp (FieldValue.serverTimestamp()) of last progress update."
+        }
+      },
+      "required": [
+        "userId",
+        "displayName",
+        "handle",
+        "avatarId",
+        "score",
+        "correctCount",
+        "answeredCount",
+        "currentStreak",
+        "bestStreak",
+        "durationSeconds",
+        "finished",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "BattleInvite": {
+      "title": "BattleInvite",
+      "description": "Direct battle room invitation sent from a host to a signed-in friend.",
+      "type": "object",
+      "properties": {
+        "roomId": {
+          "type": "string",
+          "description": "Target BattleRoom document ID / room code."
+        },
+        "roomCode": {
+          "type": "string",
+          "description": "6-character uppercase room code."
+        },
+        "hostUserId": {
+          "type": "string",
+          "description": "UID of the inviting host."
+        },
+        "hostDisplayName": {
+          "type": "string",
+          "description": "Display name of the inviting host."
+        },
+        "hostAvatarId": {
+          "type": "string",
+          "enum": ["compass", "owl", "telescope", "globe", "quill", "atom"],
+          "description": "Host emblem avatar ID."
+        },
+        "inviteeUserId": {
+          "type": "string",
+          "description": "UID of the invited friend."
+        },
+        "inviteeDisplayName": {
+          "type": "string",
+          "description": "Display name of the invited friend."
+        },
+        "topics": {
+          "type": "array",
+          "description": "Selected battle topics preview."
+        },
+        "difficulty": {
+          "type": "string",
+          "enum": ["all", "easy", "medium", "hard"],
+          "description": "Battle difficulty."
+        },
+        "mode": {
+          "type": "string",
+          "enum": ["standard", "picture", "guess"],
+          "description": "Battle mode."
+        },
+        "questionCount": {
+          "type": "integer",
+          "description": "Number of questions in the battle."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["pending", "accepted", "declined", "cancelled"],
+          "description": "Invitation status."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp (FieldValue.serverTimestamp()) when invite was sent."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp (FieldValue.serverTimestamp()) when invite was updated."
+        }
+      },
+      "required": [
+        "roomId",
+        "roomCode",
+        "hostUserId",
+        "hostDisplayName",
+        "hostAvatarId",
+        "inviteeUserId",
+        "inviteeDisplayName",
+        "topics",
+        "difficulty",
+        "mode",
+        "questionCount",
+        "status",
+        "createdAt",
+        "updatedAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/UserProfile" },
+      "description": "Private user profile and personal progress metrics owned by {userId}."
+    },
+    "/users/{userId}/quiz_sessions/{sessionId}": {
+      "schema": { "$ref": "#/entities/QuizSession" },
+      "description": "Personal quiz history records nested under the owning user."
+    },
+    "/leaderboard/{entryId}": {
+      "schema": { "$ref": "#/entities/LeaderboardEntry" },
+      "description": "Global non-PII lifetime explorer directory indexed by userId."
+    },
+    "/weekly_rankings/{cycleId}/entries/{entryId}": {
+      "schema": { "$ref": "#/entities/WeeklyRankingEntry" },
+      "description": "Weekly global ranking entries partitioned by Sunday 12:00 PM GMT reset cycle."
+    },
+    "/battle_rooms/{roomId}": {
+      "schema": { "$ref": "#/entities/BattleRoom" },
+      "description": "Multiplayer battle rooms keyed by 6-char roomCode with shared questions."
+    },
+    "/battle_rooms/{roomId}/participants/{participantId}": {
+      "schema": { "$ref": "#/entities/BattleParticipant" },
+      "description": "Live per-player scoreboard docs inside a battle room keyed by participant userId."
+    },
+    "/battle_invites/{inviteId}": {
+      "schema": { "$ref": "#/entities/BattleInvite" },
+      "description": "Direct battle room invitations from hosts to signed-in friends."
+    }
+  }
+}

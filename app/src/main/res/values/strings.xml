@@ -1,0 +1,505 @@
+<resources>
+    <string name="app_name">Trivia Atlas</string>
+    <string name="tagline">Explore curated trivia, illustrated picture rounds, and global ranks — online or offline.</string>
+    <string name="sign_in_google">Sign in with Google</string>
+    <string name="continue_as_guest">Continue as Guest (No Sign-Up)</string>
+    <string name="auth_sync_note">Play immediately as a guest, or sign in with Google to sync scores and join the global leaderboard.</string>
+    <string name="feature_picture_quizzes">Picture Quizzes</string>
+    <string name="feature_offline_cache">Offline Cache</string>
+    <string name="feature_global_ranks">Global Ranks</string>
+    <string name="feature_guess_mode">Guess Mode</string>
+
+    <string name="nav_explore">Explore</string>
+    <string name="nav_leaderboard">Ranks</string>
+    <string name="nav_profile">Profile</string>
+
+    <string name="mode_picture_quiz">Picture Atlas</string>
+    <string name="mode_daily_mix">Atlas Mix</string>
+    <string name="mode_quiz">Quiz Mode</string>
+    <string name="mode_guess">Guess Mode</string>
+    <string name="offline_ready">Offline Ready</string>
+    <string name="online_live">Live API</string>
+    <string name="sync_offline_pack">Sync Offline Pack</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_in_short">Sign In</string>
+
+    <!-- Home -->
+    <string name="welcome_user">Welcome, %1$s</string>
+    <string name="guest_explorer">Guest Explorer</string>
+    <string name="guest_mode_pill">Guest Mode • No sign-up</string>
+    <string name="pts_accuracy_summary">%1$d pts • %2$d%% accuracy</string>
+    <string name="hero_title">Curated Daily Expedition</string>
+    <string name="hero_subtitle">Play live or offline across %1$d cached questions &amp; %2$d picture plates—with full explanations at the end.</string>
+    <string name="play_atlas_mix_guess">Play Atlas Mix (Guess Mode)</string>
+    <string name="category_play_mode">Category Play Mode</string>
+    <string name="question_count_chip">%1$dQ</string>
+    <string name="mode_multiple_choice_full">Multiple Choice Quiz</string>
+    <string name="mode_guess_full">Guess Mode (1.5x pts)</string>
+    <string name="offline_library_count">Offline Library • %1$d Questions</string>
+    <string name="pending_rounds_queued">%1$d offline round(s) queued for sync</string>
+    <string name="prefetch_api_hint">Pre-fetch fresh questions from The Trivia API</string>
+    <string name="sync_button">Sync</string>
+    <string name="syncing_button">Syncing</string>
+    <string name="categories_header">Categories</string>
+    <string name="tap_to_guess">Tap to Guess</string>
+    <string name="tap_for_quiz">Tap for Quiz</string>
+    <string name="play_picture_guess">Play Picture Atlas in Guess Mode</string>
+    <string name="explore_picture_plates">Explore All Picture Atlas Plates</string>
+    <string name="synced_rounds_banner">Synced %1$d offline round(s) to leaderboard</string>
+    <string name="added_questions_banner">Added %1$d new questions for offline play</string>
+    <string name="cache_up_to_date">Offline cache is up to date</string>
+    <string name="unable_sync_pack">Unable to sync offline pack</string>
+    <string name="device_offline_sync_error">Device is offline. Connect to sync new questions.</string>
+
+    <!-- Categories -->
+    <string name="cat_mixed_title">Atlas Mix</string>
+    <string name="cat_mixed_sub">Curated across every domain</string>
+    <string name="cat_picture_title">Picture Atlas</string>
+    <string name="cat_picture_sub">Illustrated &amp; visual identification</string>
+    <string name="cat_general_title">General Knowledge</string>
+    <string name="cat_general_sub">Everyday wonders &amp; crisp facts</string>
+    <string name="cat_science_title">Science</string>
+    <string name="cat_science_sub">Cosmos, physics, biology &amp; labs</string>
+    <string name="cat_history_title">History</string>
+    <string name="cat_history_sub">Empires, milestones &amp; archives</string>
+    <string name="cat_geography_title">Geography</string>
+    <string name="cat_geography_sub">Peaks, rivers, capitals &amp; maps</string>
+    <string name="cat_arts_title">Arts &amp; Literature</string>
+    <string name="cat_arts_sub">Canvas, classics &amp; prose</string>
+    <string name="cat_film_title">Film &amp; TV</string>
+    <string name="cat_film_sub">Cinema reels &amp; iconic frames</string>
+    <string name="cat_music_title">Music</string>
+    <string name="cat_music_sub">Symphonies, legends &amp; rhythm</string>
+    <string name="cat_sport_title">Sport &amp; Leisure</string>
+    <string name="cat_sport_sub">Tournaments, records &amp; play</string>
+    <string name="cat_food_title">Food &amp; Drink</string>
+    <string name="cat_food_sub">Culinary craft &amp; world flavors</string>
+    <string name="cat_culture_title">Society &amp; Culture</string>
+    <string name="cat_culture_sub">Traditions, language &amp; thought</string>
+    <string name="cat_wikipedia_title">Wikipedia Daily</string>
+    <string name="cat_wikipedia_sub">Daily random article challenge</string>
+
+    <!-- Daily Wikipedia Carousel & AI Quiz -->
+    <string name="wiki_carousel_badge">Daily Wikipedia • %1$s</string>
+    <string name="wiki_loading">Discovering today\'s random Wikipedia articles…</string>
+    <string name="wiki_offline_msg">Connect to load today\'s random Wikipedia articles in your language.</string>
+    <string name="wiki_error_msg">Unable to load Wikipedia articles right now.</string>
+    <string name="wiki_quiz_cta">Play Trivia Quiz on This Article</string>
+    <string name="wiki_read_article">Read Summary</string>
+    <string name="wiki_read_and_quiz_cta">Read Article &amp; Play Quiz</string>
+    <string name="wiki_open_browser">Open in browser</string>
+    <string name="wiki_start_quiz_after_read">Start Trivia Quiz</string>
+    <string name="wiki_loading_full_article">Loading full Wikipedia article…</string>
+    <string name="wiki_read_time">~%1$d min read</string>
+    <string name="wiki_read_then_quiz_hint">Read the full article below, then tap Start Trivia Quiz to answer all questions based on it.</string>
+    <string name="wiki_article_counter">%1$d / %2$d</string>
+    <string name="wiki_generating_quiz">Crafting trivia questions from \"%1$s\"…</string>
+    <string name="wiki_generating_generic">Crafting Wikipedia trivia questions…</string>
+    <string name="wiki_article_not_found">Selected Wikipedia article is no longer cached. Please go back and refresh.</string>
+    <string name="close_button">Close</string>
+
+    <!-- Difficulty, Theme, Language, Avatars, Sort -->
+    <string name="difficulty_label">Difficulty</string>
+    <string name="diff_all">Any Level</string>
+    <string name="diff_easy">Easy</string>
+    <string name="diff_medium">Medium</string>
+    <string name="diff_hard">Hard</string>
+
+    <string name="theme_system">Auto</string>
+    <string name="theme_light">Daylight</string>
+    <string name="theme_dark">Night</string>
+
+    <string name="lang_system">Auto</string>
+    <string name="lang_en">English</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_in">Indonesia</string>
+    <string name="language_label">App Language</string>
+
+    <string name="avatar_compass">Compass</string>
+    <string name="avatar_owl">Scholar Owl</string>
+    <string name="avatar_telescope">Stargazer</string>
+    <string name="avatar_globe">Cartographer</string>
+    <string name="avatar_quill">Archivist</string>
+    <string name="avatar_atom">Alchemist</string>
+
+    <string name="sort_total_score">Total Score</string>
+    <string name="sort_high_score">Best Round</string>
+    <string name="sort_best_streak">Best Streak</string>
+
+    <!-- Quiz & Guess Mode & Explanations -->
+    <string name="leave_expedition_title">Leave Expedition?</string>
+    <string name="leave_expedition_msg">Your current round progress won\'t be saved if you exit now.</string>
+    <string name="leave_button">Leave</string>
+    <string name="keep_playing_button">Keep Playing</string>
+    <string name="preparing_questions">Preparing questions...</string>
+    <string name="no_questions_error">No trivia questions available for this filter yet.</string>
+    <string name="offline_disabled_error">Offline Mode is turned off. Connect to the internet or enable Offline Mode in Profile.</string>
+    <string name="library_empty_error">Your offline library is empty. Refresh the library in Profile or connect to play live.</string>
+    <string name="live_fetch_error">Unable to fetch live questions right now. Check your connection or turn on Offline Mode in Profile.</string>
+    <string name="back_button">Back</string>
+    <string name="retry_button">Retry</string>
+    <string name="pts_badge">%1$d pts</string>
+    <string name="guess_multiplier_badge">Guess • 1.5x</string>
+    <string name="offline_badge">Offline</string>
+    <string name="correct_plus_pts">Correct! +%1$d pts</string>
+    <string name="times_up">Time\'s up!</string>
+    <string name="not_quite">Not quite</string>
+    <string name="answer_label">Answer: %1$s</string>
+    <string name="finish_view_explanations">Finish &amp; View Explanations</string>
+    <string name="next_question">Next Question</string>
+    <string name="type_your_answer">Type your answer</string>
+    <string name="enter_best_guess">Enter your best guess...</string>
+    <string name="hint_button">Hint</string>
+    <string name="hint_shown">Hint Shown</string>
+    <string name="submit_guess">Submit Guess</string>
+    <string name="pass_button">Pass</string>
+    <string name="expedition_complete">Expedition Complete</string>
+    <string name="points_earned_caps">POINTS EARNED</string>
+    <string name="stat_correct">Correct</string>
+    <string name="stat_accuracy">Accuracy</string>
+    <string name="stat_streak">Streak</string>
+    <string name="stat_time">Time</string>
+    <string name="score_synced_cloud">Score synced to your profile &amp; global leaderboard.</string>
+    <string name="score_queued_offline">Saved offline! Will sync to global leaderboard when online.</string>
+    <string name="score_saved_guest">Played in Guest Mode — saved on this device. Sign in anytime for global ranks.</string>
+    <string name="score_saved_local">Saved locally.</string>
+    <string name="play_again">Play Again</string>
+    <string name="back_to_atlas">Back to Atlas</string>
+    <string name="question_explanations_title">Question Explanations</string>
+    <string name="filter_all_count">All (%1$d)</string>
+    <string name="filter_missed_count">Missed (%1$d)</string>
+    <string name="flawless_round_msg">Flawless round! You didn\'t miss a single question.</string>
+    <string name="status_timed_out">Timed Out</string>
+    <string name="status_missed">Missed</string>
+    <string name="your_answer_label">Your answer: %1$s</string>
+    <string name="correct_answer_label">Correct answer: %1$s</string>
+    <string name="explanation_caps">EXPLANATION</string>
+
+    <!-- Leaderboard -->
+    <string name="leaderboard_title">Global Leaderboard</string>
+    <string name="leaderboard_subtitle">Top explorers ranked across Trivia Atlas.</string>
+    <string name="leaderboard_guest_title">Compete on the Global Board</string>
+    <string name="leaderboard_guest_body">You can play Quiz Mode, Guess Mode, and Picture Atlas freely as a guest. Sign in with Google whenever you want to publish scores and climb the global ranks.</string>
+    <string name="no_ranks_yet">No Ranks Recorded Yet</string>
+    <string name="no_ranks_body">Complete your first trivia expedition to claim the #1 spot on the global board.</string>
+    <string name="your_standing">Your Standing • %1$s</string>
+    <string name="rounds_accuracy_line">%1$d rounds • %2$d%% accuracy</string>
+    <string name="best_suffix">%1$d best</string>
+
+    <!-- Profile & Settings -->
+    <string name="profile_title">Explorer Profile</string>
+    <string name="guest_handle">guest_local</string>
+    <string name="guest_bio">Playing freely without sign-up. Progress is stored on this device.</string>
+    <string name="guest_sync_title">Sync Across Devices</string>
+    <string name="guest_sync_desc">Sign in with Google to unlock custom cloud profiles and global leaderboard rankings.</string>
+    <string name="specialty_label">Specialty: %1$s</string>
+    <string name="personal_progress">Personal Progress</string>
+    <string name="metric_total_score">Total Score</string>
+    <string name="metric_high_score">High Score</string>
+    <string name="metric_accuracy">Accuracy</string>
+    <string name="metric_rounds">Rounds</string>
+    <string name="metric_best_streak">Best Streak</string>
+    <string name="metric_cached_qs">Cached Qs</string>
+    <string name="pending_sync_notice">%1$d offline session(s) queued to sync automatically.</string>
+    <string name="appearance_and_play">Appearance &amp; Play</string>
+    <string name="theme_mode_label">Theme Mode</string>
+    <string name="countdown_timer_title">Question Countdown Timer</string>
+    <string name="countdown_timer_sub">Earn speed bonus points during timed rounds</string>
+    <string name="recent_expeditions">Recent Expeditions</string>
+    <string name="no_sessions_yet">Your completed trivia rounds will appear here.</string>
+    <string name="session_summary_line">%1$d/%2$d correct • %3$dx streak%4$s</string>
+    <string name="customize_profile">Customize Profile</string>
+    <string name="choose_emblem">Choose Emblem</string>
+    <string name="display_name_hint">Display Name (2-30 chars)</string>
+    <string name="handle_hint">Handle (2-24 chars)</string>
+    <string name="bio_hint">Bio (max 140 chars)</string>
+    <string name="favorite_category_label">Favorite Category</string>
+    <string name="save_button">Save</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="ok_button">OK</string>
+    <string name="profile_updated">Profile updated</string>
+    <string name="offline_mode_toggle_title">Offline Mode</string>
+    <string name="offline_mode_toggle_sub">Use local library offline or as fallback (turn off for fresh live variety)</string>
+    <string name="refresh_library_button">Refresh</string>
+    <string name="delete_library_button">Delete All</string>
+    <string name="delete_library_confirm_title">Delete Offline Library?</string>
+    <string name="delete_library_confirm_msg">This removes all %1$d cached questions from your device. You can restore them anytime with Refresh.</string>
+    <string name="confirm_delete_button">Delete All</string>
+    <string name="feedback_offline_mode_on">Offline Mode enabled — local library active</string>
+    <string name="feedback_offline_mode_off">Offline Mode disabled — live variety mode active</string>
+    <string name="feedback_library_deleted">Offline library cleared</string>
+    <string name="feedback_library_refreshed">Library refreshed (%1$d questions ready)</string>
+
+    <!-- Battle Mode -->
+    <string name="nav_battle">Battle</string>
+    <string name="battle_hub_title">Battle Arena</string>
+    <string name="battle_hub_subtitle">Challenge friends in shared rooms with synchronized topics &amp; questions.</string>
+    <string name="battle_guest_title">Sign In for Multiplayer Battles</string>
+    <string name="battle_guest_body">Challenge multiple friends in the same room via Room Code or direct invitation. Sign in with Google so friends can find and invite you.</string>
+    <string name="battle_create_room_cta">Host New Battle Room</string>
+    <string name="battle_home_banner_title">Friend Battle Mode</string>
+    <string name="battle_home_banner_sub">Create a room, pick topics &amp; challenge friends with identical questions</string>
+    <string name="battle_open_arena">Open Arena</string>
+    <string name="battle_join_code_title">Join by Room Code</string>
+    <string name="battle_room_code_hint">Enter 6-character code (e.g. K7M9PQ)</string>
+    <string name="battle_join_button">Join Room</string>
+    <string name="battle_incoming_invites_title">Direct Invitations (%1$d)</string>
+    <string name="battle_invite_from">%1$s invited you to Battle Room %2$s</string>
+    <string name="battle_accept_button">Accept</string>
+    <string name="battle_decline_button">Decline</string>
+    <string name="battle_my_rooms_title">Your Battle Rooms</string>
+    <string name="battle_no_rooms_title">No Active Battle Rooms</string>
+    <string name="battle_no_rooms_body">Host a room and pick your favorite topics, or enter a friend\'s room code above to start competing.</string>
+    <string name="battle_status_waiting">Lobby Open</string>
+    <string name="battle_status_active">Live Battle</string>
+    <string name="battle_status_finished">Completed</string>
+    <string name="battle_players_count">%1$d player(s)</string>
+    <string name="battle_topics_count">%1$d topic(s) • %2$dQ</string>
+    <string name="battle_setup_dialog_title">Host Battle Room</string>
+    <string name="battle_pick_topics_label">Pick Topics (Host Choice)</string>
+    <string name="battle_questions_label">Questions</string>
+    <string name="battle_invite_friends_optional">Invite Friends Directly (Optional)</string>
+    <string name="battle_no_friends_available">Share the Room Code once created so friends can join immediately.</string>
+    <string name="battle_create_and_open">Create Room</string>
+    <string name="battle_creating_room">Preparing shared battle deck…</string>
+    <string name="battle_error_code_invalid">Enter a valid 4 to 12 character room code.</string>
+    <string name="battle_error_room_not_found">Battle room not found. Double-check the room code.</string>
+    <string name="battle_error_already_started">This battle has already started and is locked for new players.</string>
+    <string name="battle_error_room_full">This battle room is already full (max 12 players).</string>
+    <string name="battle_error_generic">Unable to complete battle action. Try again.</string>
+
+    <!-- Battle Room Lobby & Arena -->
+    <string name="battle_room_code_label">ROOM CODE</string>
+    <string name="battle_copy_code">Copy Code</string>
+    <string name="battle_share_code">Share Invite</string>
+    <string name="battle_code_copied">Room code %1$s copied!</string>
+    <string name="battle_share_text">Join my Trivia Atlas Battle Room! Code: %1$s</string>
+    <string name="battle_host_badge">Host</string>
+    <string name="battle_you_badge">You</string>
+    <string name="battle_roster_title">Challengers (%1$d / 12)</string>
+    <string name="battle_start_button">Start Battle for Everyone</string>
+    <string name="battle_waiting_host_msg">Waiting for %1$s to start the battle…</string>
+    <string name="battle_invite_friends_header">Direct Friend Invites</string>
+    <string name="battle_invite_button">Invite</string>
+    <string name="battle_invited_chip">Invited</string>
+    <string name="battle_joined_chip">In Room</string>
+    <string name="battle_leave_room_title">Leave Battle Room?</string>
+    <string name="battle_leave_room_host_msg">As host, leaving this lobby will close the waiting room for everyone.</string>
+    <string name="battle_leave_room_player_msg">Leave this waiting lobby and return to Battle Arena?</string>
+    <string name="battle_leave_active_msg">Leaving mid-battle pauses your live progress. Your scores so far stay in the room.</string>
+    <string name="battle_live_standings">Live Standings</string>
+    <string name="battle_podium_title">Battle Standings</string>
+    <string name="battle_waiting_others">Waiting for %1$d challenger(s) to finish…</string>
+    <string name="battle_all_finished">All challengers have finished! Shared explanations below.</string>
+    <string name="battle_progress_chip">%1$d/%2$d Q</string>
+    <string name="battle_finished_badge">Done</string>
+    <string name="battle_lock_results_button">Finish Room Now</string>
+    <string name="battle_room_closed">This battle room was closed or does not exist.</string>
+    <string name="custom_api_key_title">Custom Gemini API Key</string>
+    <string name="custom_api_key_sub">Use your own Gemini API key for Wikipedia AI quiz generation</string>
+    <string name="custom_api_key_hint">Enter Gemini API Key (AIzaSy...)</string>
+    <string name="custom_api_key_saved">Custom Gemini API key saved successfully</string>
+
+    <!-- Wikipedia Own AI Quiz Builder -->
+    <string name="wiki_own_ai_sheet_title">Generate Quiz With Your Own AI</string>
+    <string name="wiki_own_ai_sheet_subtitle">Choose how to turn \"%1$s\" into trivia questions using your own AI account or offline engine.</string>
+    <string name="wiki_ai_option_gemini_title">Your Personal Gemini API Key</string>
+    <string name="wiki_ai_option_gemini_sub">Calls Google Gemini directly from your device using your own key (no app billing needed).</string>
+    <string name="wiki_ai_key_input_label">Gemini API Key (AIzaSy...)</string>
+    <string name="wiki_ai_save_generate_cta">Generate With My Gemini Key</string>
+    <string name="wiki_ai_option_prompt_title">Use Any AI App (Gemini, ChatGPT, Claude)</string>
+    <string name="wiki_ai_option_prompt_sub">Copy this article\'s quiz prompt into your AI app, then paste the JSON reply below.</string>
+    <string name="wiki_ai_copy_prompt_cta">Copy Prompt</string>
+    <string name="wiki_ai_share_prompt_cta">Share to AI App</string>
+    <string name="wiki_ai_prompt_copied">Prompt copied! Paste it into your AI app and copy the JSON reply.</string>
+    <string name="wiki_ai_paste_json_label">Paste AI JSON Reply Here</string>
+    <string name="wiki_ai_import_play_cta">Import &amp; Play AI Quiz</string>
+    <string name="wiki_ai_invalid_json">Could not read valid quiz questions from that text. Paste the JSON returned by your AI.</string>
+    <string name="wiki_ai_option_local_title">Instant Article Quiz (No Key Needed)</string>
+    <string name="wiki_ai_option_local_sub">Extracts dates, numbers &amp; facts directly from the article right now.</string>
+    <string name="wiki_ai_local_play_cta">Play Instant Article Quiz</string>
+    <string name="wiki_missing_api_key_error">No personal Gemini API key saved yet. Enter your key below, or copy the prompt from the article screen to use your own AI app.</string>
+
+    <!-- Lifetime Explorer Level & Weekly Ranking Reset -->
+    <string name="level_badge_short">Lv. %1$d</string>
+    <string name="level_title_card">Explorer Level</string>
+    <string name="level_lifetime_badge">Lifetime</string>
+    <string name="level_xp_progress">%1$s / %2$s XP to Lv. %3$d</string>
+    <string name="level_lifetime_total">Lifetime XP: %1$s</string>
+    <string name="home_level_summary">Lv. %1$d • %2$s XP • %3$d%% acc</string>
+    <string name="weekly_ranking_title">This Week\'s Ranking</string>
+    <string name="metric_weekly_xp">Weekly XP</string>
+    <string name="metric_lifetime_xp">Lifetime XP</string>
+    <string name="metric_weekly_rounds">Weekly Rounds</string>
+    <string name="ranking_reset_schedule">Resets Sunday 12:00 PM GMT</string>
+    <string name="ranking_resets_in_dh">%1$dd %2$dh left</string>
+    <string name="ranking_resets_in_hm">%1$dh %2$dm left</string>
+    <string name="ranking_resets_in_ms">%1$dm %2$ds left</string>
+    <string name="leaderboard_weekly_subtitle">Weekly XP ranking • Resets every Sunday 12:00 PM GMT</string>
+    <string name="xp_badge">%1$s XP</string>
+    <string name="sort_weekly_xp">Weekly XP</string>
+    <string name="weekly_no_ranks_yet">New Weekly Season Started</string>
+    <string name="weekly_no_ranks_body">Global ranking expires every Sunday at 12:00 PM GMT and resets XP to 0. Play a round to claim #1 this week — your Lifetime Level never resets!</string>
+    <string name="your_unranked_weekly">0 Weekly XP this week • Play a round to rank!</string>
+    <string name="quiz_xp_gained_note">+%1$s XP added to Lifetime Lv. %2$d &amp; Weekly Ranking</string>
+
+    <!-- Technology Category -->
+    <string name="cat_technology_title">Technology</string>
+    <string name="cat_technology_sub">Computing, AI, gadgets &amp; software</string>
+
+    <!-- Instant-only Wikipedia sheet when no Gemini key saved -->
+    <string name="wiki_instant_only_title">Article Trivia Quiz</string>
+    <string name="wiki_instant_only_sub">Launch an instant trivia round generated directly from \"%1$s\". You can also add a Gemini API key anytime in Profile.</string>
+
+    <!-- Battle XP Room Rules & Signed XP Labels -->
+    <string name="battle_rules_title">Battle XP Rules</string>
+    <string name="battle_rules_cd">Battle XP Rules Info</string>
+    <string name="battle_rule_1">1. Answer right: earn +XP</string>
+    <string name="battle_rule_2">2. Answer wrong: lose -XP</string>
+    <string name="battle_rule_3">3. No answer (time out / pass): 0 XP</string>
+    <string name="battle_rule_4">4. Most XP wins the battle</string>
+    <string name="battle_rule_5">5. Every question has a 30s timer — faster answers earn more XP</string>
+    <string name="battle_rule_6">6. Category &amp; question level are fixed by the host</string>
+    <string name="battle_rules_got_it">Got It</string>
+    <string name="battle_xp_badge">%1$d XP</string>
+    <string name="battle_wrong_minus_xp">Not quite! %1$d XP</string>
+    <string name="battle_no_answer_zero_xp">Time\'s up! No answer (0 XP)</string>
+    <string name="battle_pass_zero_xp">Skipped — No answer (0 XP)</string>
+    <string name="battle_status_no_answer">0 XP</string>
+    <string name="battle_host_fixed_notice">30s / question • Fixed by host</string>
+
+    <!-- Daily Streak & Streak Freeze -->
+    <string name="daily_streak_title">Daily Streak</string>
+    <string name="daily_streak_count_badge">%1$d d</string>
+    <string name="daily_streak_days_count">%1$d day(s)</string>
+    <string name="daily_streak_best">Best: %1$d day(s)</string>
+    <string name="streak_freeze_title">Streak Freeze</string>
+    <string name="streak_freeze_count_ratio">%1$d / %2$d Ready</string>
+    <string name="streak_freeze_saved_today">Streak saved by Freeze today!</string>
+    <string name="streak_daily_xp_progress">%1$s / %2$s XP today for next Freeze</string>
+    <string name="streak_freeze_full_note">Max Streak Freezes (3/3) ready!</string>
+    <string name="streak_how_to_earn">Earn Freezes (max 3) by earning 10,000+ XP in a day, finishing 3 daily objectives for 3 days in a row, or leveling up.</string>
+    <string name="streak_checked_in_banner">Daily Streak: %1$d day(s) active!</string>
+    <string name="streak_frozen_saved_banner">Streak Freeze saved your %1$d-day streak! (%2$d left)</string>
+    <string name="streak_freeze_earned_quiz_badge">+%1$d Streak Freeze Earned!</string>
+
+    <!-- Device-Only Custom Gemini Key & Model Selection -->
+    <string name="custom_api_key_device_only_badge">On-Device Only • Hidden</string>
+    <string name="custom_api_key_saved_hidden">API key saved and hidden on this device. It never syncs to the cloud or leaves your device.</string>
+    <string name="custom_api_key_replace_hint">Key saved &amp; hidden — paste new key to replace</string>
+    <string name="custom_api_key_clear_button">Clear Key</string>
+    <string name="custom_gemini_model_label">Gemini Model</string>
+    <string name="gemini_model_need_key">Save your Gemini API key first to load models</string>
+    <string name="gemini_model_loading">Loading models from your API key…</string>
+    <string name="gemini_model_error_short">Could not load models from API key</string>
+    <string name="gemini_model_none_found">No compatible models found for this key</string>
+    <string name="gemini_model_refresh_cd">Refresh available Gemini models</string>
+    <string name="wiki_start_ai_quiz_cta">Start AI Quiz (%1$s)</string>
+    <string name="wiki_start_ai_quiz_default">Start AI Quiz</string>
+    <string name="wiki_ai_auto_fallback_banner">Your Gemini AI settings failed for this article — automatically switched to Instant Article Quiz.</string>
+    <string name="wiki_ai_active_badge">AI • %1$s</string>
+    <string name="wiki_instant_fallback_badge">Instant Fallback</string>
+
+    <!-- Wikipedia Search & Custom Internet Article URL -->
+    <string name="wiki_search_hint">Search Wikipedia articles…</string>
+    <string name="wiki_open_url_cd">Open article URL</string>
+    <string name="wiki_searching">Searching Wikipedia…</string>
+    <string name="wiki_search_empty">No matching articles found for \"%1$s\".</string>
+    <string name="wiki_search_error">Could not search Wikipedia right now.</string>
+    <string name="wiki_search_clear_cd">Clear search</string>
+    <string name="wiki_custom_url_dialog_title">Open Custom Article URL</string>
+    <string name="wiki_custom_url_dialog_sub">Paste any Wikipedia or web article URL to read it cleanly and generate a quiz.</string>
+    <string name="wiki_custom_url_input_label">Article URL (https://...)</string>
+    <string name="wiki_custom_url_open_button">Open &amp; Read</string>
+    <string name="wiki_custom_url_loading">Fetching readable article…</string>
+    <string name="wiki_custom_url_error_invalid">Enter a valid web address (e.g. https://example.com/article).</string>
+    <string name="wiki_custom_url_error_unreadable">Could not extract readable article text from that URL.</string>
+
+    <!-- Daily Streak Info Dialog -->
+    <string name="streak_rules_info_cd">Daily Streak &amp; Freeze Rules</string>
+    <string name="streak_rules_dialog_title">How to Earn Streak Freezes</string>
+    <string name="streak_rules_intro">Open Trivia Atlas daily to build your Streak. If you miss a day, a saved Streak Freeze (up to 3 max) automatically saves your streak. Earn Freezes from any of these 3 challenges:</string>
+    <string name="streak_rule_xp_10k">1. Earn 10,000+ XP in a single day</string>
+    <string name="streak_rule_daily_objectives">2. Complete all 3 Daily Objectives for 3 consecutive days</string>
+    <string name="streak_rule_level_up">3. Reach a new Explorer Level</string>
+
+    <!-- 30-Scenario Daily Objectives -->
+    <string name="daily_objectives_title">Daily Objectives</string>
+    <string name="daily_objectives_progress_pill">%1$d / %2$d</string>
+    <string name="daily_objectives_streak_pill">%1$d / %2$d days streak toward Freeze</string>
+    <string name="daily_objectives_streak_complete_pill">%1$d / %2$d days • Streak Freeze earned!</string>
+    <string name="daily_objective_done_badge">Done</string>
+    <string name="daily_objective_launch_cd">Launch challenge</string>
+    <string name="daily_objectives_completed_round_banner">Daily Objective complete! (%1$d new)</string>
+    <string name="obj_badge_speed">Speed</string>
+    <string name="obj_badge_streak">Streak</string>
+    <string name="obj_badge_xp">XP Goal</string>
+    <string name="obj_badge_habit">Daily Habit</string>
+    <string name="obj_geo_10_10">Get 10/10 in Geography</string>
+    <string name="obj_sci_10_10">Get 10/10 in Science</string>
+    <string name="obj_his_10_10">Get 10/10 in History</string>
+    <string name="obj_tech_10_10">Get 10/10 in Technology</string>
+    <string name="obj_gk_10_10">Get 10/10 in General Knowledge</string>
+    <string name="obj_arts_8_10">Score 8+/10 in Arts &amp; Literature</string>
+    <string name="obj_film_8_10">Score 8+/10 in Film &amp; TV</string>
+    <string name="obj_music_8_10">Score 8+/10 in Music</string>
+    <string name="obj_sport_8_10">Score 8+/10 in Sport &amp; Leisure</string>
+    <string name="obj_food_8_10">Score 8+/10 in Food &amp; Drink</string>
+    <string name="obj_culture_8_10">Score 8+/10 in Society &amp; Culture</string>
+    <string name="obj_hard_mix_70">Clear Hard Atlas Mix (10Q) with 70%+ accuracy</string>
+    <string name="obj_hard_sci_80">Clear Hard Science (5Q+) with 80%+ accuracy</string>
+    <string name="obj_hard_his_80">Clear Hard History (5Q+) with 80%+ accuracy</string>
+    <string name="obj_speed_geo_90">Finish 10Q Geography (6+ correct) under 90s</string>
+    <string name="obj_speed_tech_90">Finish 10Q Technology (6+ correct) under 90s</string>
+    <string name="obj_streak_mix_7">Hit a 7+ answer streak in Atlas Mix</string>
+    <string name="obj_streak_any_10">Achieve a 10x perfect streak in a 10Q round</string>
+    <string name="obj_pic_8_10">Score 8+/10 in Picture Atlas</string>
+    <string name="obj_pic_10_10">Get a perfect 10/10 in Picture Atlas</string>
+    <string name="obj_pic_guess_70">Score 70%+ in Picture Guess Mode</string>
+    <string name="obj_guess_mix_6">Solve 6+/10 in Atlas Mix Guess Mode</string>
+    <string name="obj_guess_geo_no_hint">Solve 5+ Geography Guess answers with 0 hints</string>
+    <string name="obj_guess_sci_70">Clear Science Guess Mode (5Q+) with 70%+ accuracy</string>
+    <string name="obj_wiki_70">Play a Daily Wikipedia Quiz with 70%+ accuracy</string>
+    <string name="obj_wiki_100">Ace a Daily Wikipedia Quiz with 100% accuracy</string>
+    <string name="obj_xp_round_1200">Earn 1,200+ XP in one Geography or History round</string>
+    <string name="obj_xp_hard_1500">Earn 1,500+ XP in a single Hard round</string>
+    <string name="obj_rounds_2_today">Complete 2 trivia rounds today</string>
+    <string name="obj_daily_xp_3000">Earn 3,000+ total XP today</string>
+
+    <!-- Battle Wikipedia Search & Custom URL -->
+    <string name="battle_source_label">Question Source</string>
+    <string name="battle_source_topics">Topics</string>
+    <string name="battle_source_wikipedia">Search Wikipedia</string>
+    <string name="battle_source_custom_url">Custom URL</string>
+    <string name="battle_wiki_search_hint">Search any Wikipedia article…</string>
+    <string name="battle_selected_article_badge">Selected Battle Article</string>
+    <string name="battle_load_url_button">Load</string>
+    <string name="battle_article_quiz_note">Questions are generated from this article (using your Gemini AI key if saved, or Instant Article Quiz) — identical for all players.</string>
+    <string name="battle_error_article_quiz">Could not generate battle questions from that article. Try another article or URL.</string>
+    <string name="battle_pick_or_load_article">Search and pick an article or load a valid URL first.</string>
+
+    <!-- About Trivia Atlas -->
+    <string name="about_section_title">About</string>
+    <string name="about_version_badge">v%1$s</string>
+    <string name="about_developer_label">Developer</string>
+    <string name="about_developer_name">brillian11</string>
+    <string name="about_repository_label">GitHub Repository</string>
+    <string name="about_repository_url">https://github.com/brillian11/trivia-atlas</string>
+    <string name="about_summary_body">Explore curated trivia, Wikipedia article quizzes, Picture Atlas, and real-time Friend Battles — online or offline.</string>
+    <string name="about_open_window_cta">APIs, Keys &amp; Repositories</string>
+    <string name="about_dialog_title">About Trivia Atlas</string>
+    <string name="about_apis_section">APIs &amp; API Key Setup</string>
+    <string name="about_api_trivia_title">The Trivia API &amp; OpenTDB</string>
+    <string name="about_api_trivia_desc">the-trivia-api.com • opentdb.com — Live multi-category trivia feed. No API key required.</string>
+    <string name="about_api_wiki_title">Wikipedia MediaWiki &amp; Google Translate</string>
+    <string name="about_api_wiki_desc">*.wikipedia.org/w/api.php • translate.googleapis.com — Daily articles, search, Picture Atlas plates &amp; localization. No API key required.</string>
+    <string name="about_api_gemini_title">Google Gemini API (BYOK)</string>
+    <string name="about_api_gemini_desc">generativelanguage.googleapis.com/v1beta — Optional personal key (AIzaSy…) saved strictly on-device for Wikipedia &amp; Custom URL quizzes, with automatic Instant Quiz fallback.</string>
+    <string name="about_api_firebase_title">Firebase Auth, Cloud Firestore &amp; App Check</string>
+    <string name="about_api_firebase_desc">Configured via google-services.json &amp; Jetpack Credential Manager for Google Sign-In, Weekly Ranks, and live Battle Rooms.</string>
+    <string name="about_repos_section">Core Libraries &amp; Repositories</string>
+    <string name="about_repos_list">Jetpack Compose (Material 3) • Navigation Compose • Room &amp; DataStore • Retrofit, OkHttp &amp; Moshi • Coil • Kotlin Coroutines &amp; KSP • Firebase Android SDK • Robolectric</string>
+    <string name="about_open_github_cd">Open GitHub repository</string>
+    <string name="about_license_footer">MIT License • Built by brillian11</string>
+</resources>

@@ -1,0 +1,505 @@
+<resources>
+    <string name="app_name">Trivia Atlas</string>
+    <string name="tagline">Jelajahi kuis pilihan, ronde gambar ilustrasi, dan peringkat global — online maupun offline.</string>
+    <string name="sign_in_google">Masuk dengan Google</string>
+    <string name="continue_as_guest">Lanjut sebagai Tamu (Tanpa Daftar)</string>
+    <string name="auth_sync_note">Main langsung sebagai tamu, atau masuk dengan Google untuk sinkronisasi skor dan papan peringkat global.</string>
+    <string name="feature_picture_quizzes">Kuis Gambar</string>
+    <string name="feature_offline_cache">Cache Offline</string>
+    <string name="feature_global_ranks">Peringkat Global</string>
+    <string name="feature_guess_mode">Mode Tebak</string>
+
+    <string name="nav_explore">Jelajah</string>
+    <string name="nav_leaderboard">Peringkat</string>
+    <string name="nav_profile">Profil</string>
+
+    <string name="mode_picture_quiz">Atlas Gambar</string>
+    <string name="mode_daily_mix">Campuran Atlas</string>
+    <string name="mode_quiz">Mode Kuis</string>
+    <string name="mode_guess">Mode Tebak</string>
+    <string name="offline_ready">Siap Offline</string>
+    <string name="online_live">API Langsung</string>
+    <string name="sync_offline_pack">Sinkronkan Paket Offline</string>
+    <string name="edit_profile">Edit Profil</string>
+    <string name="sign_out">Keluar</string>
+    <string name="sign_in_short">Masuk</string>
+
+    <!-- Home -->
+    <string name="welcome_user">Halo, %1$s</string>
+    <string name="guest_explorer">Penjelajah Tamu</string>
+    <string name="guest_mode_pill">Mode Tamu • Tanpa daftar</string>
+    <string name="pts_accuracy_summary">%1$d poin • %2$d%% akurasi</string>
+    <string name="hero_title">Ekspedisi Harian Pilihan</string>
+    <string name="hero_subtitle">Main online atau offline dengan %1$d soal tersimpan &amp; %2$d pelat gambar—lengkap dengan penjelasan di akhir.</string>
+    <string name="play_atlas_mix_guess">Main Campuran Atlas (Mode Tebak)</string>
+    <string name="category_play_mode">Mode Bermain Kategori</string>
+    <string name="question_count_chip">%1$d Soal</string>
+    <string name="mode_multiple_choice_full">Kuis Pilihan Ganda</string>
+    <string name="mode_guess_full">Mode Tebak (1.5x poin)</string>
+    <string name="offline_library_count">Pustaka Offline • %1$d Soal</string>
+    <string name="pending_rounds_queued">%1$d ronde offline menunggu sinkronisasi</string>
+    <string name="prefetch_api_hint">Unduh soal terbaru dari The Trivia API</string>
+    <string name="sync_button">Sinkron</string>
+    <string name="syncing_button">Menyinkronkan</string>
+    <string name="categories_header">Kategori</string>
+    <string name="tap_to_guess">Ketuk untuk Menebak</string>
+    <string name="tap_for_quiz">Ketuk untuk Kuis</string>
+    <string name="play_picture_guess">Main Atlas Gambar di Mode Tebak</string>
+    <string name="explore_picture_plates">Jelajahi Semua Pelat Atlas Gambar</string>
+    <string name="synced_rounds_banner">Menyinkronkan %1$d ronde offline ke peringkat</string>
+    <string name="added_questions_banner">Menambahkan %1$d soal baru untuk main offline</string>
+    <string name="cache_up_to_date">Cache offline sudah paling baru</string>
+    <string name="unable_sync_pack">Gagal menyinkronkan paket offline</string>
+    <string name="device_offline_sync_error">Perangkat sedang offline. Sambungkan internet untuk sinkron soal baru.</string>
+
+    <!-- Categories -->
+    <string name="cat_mixed_title">Campuran Atlas</string>
+    <string name="cat_mixed_sub">Pilihan dari seluruh topik</string>
+    <string name="cat_picture_title">Atlas Gambar</string>
+    <string name="cat_picture_sub">Identifikasi visual &amp; ilustrasi</string>
+    <string name="cat_general_title">Pengetahuan Umum</string>
+    <string name="cat_general_sub">Fakta menarik &amp; wawasan harian</string>
+    <string name="cat_science_title">Sains</string>
+    <string name="cat_science_sub">Kosmos, fisika, biologi &amp; riset</string>
+    <string name="cat_history_title">Sejarah</string>
+    <string name="cat_history_sub">Kekaisaran, tonggak masa &amp; arsip</string>
+    <string name="cat_geography_title">Geografi</string>
+    <string name="cat_geography_sub">Puncak, sungai, ibu kota &amp; peta</string>
+    <string name="cat_arts_title">Seni &amp; Sastra</string>
+    <string name="cat_arts_sub">Kanvas, karya klasik &amp; prosa</string>
+    <string name="cat_film_title">Film &amp; TV</string>
+    <string name="cat_film_sub">Sinema &amp; adegan ikonik</string>
+    <string name="cat_music_title">Musik</string>
+    <string name="cat_music_sub">Simfoni, legenda &amp; irama</string>
+    <string name="cat_sport_title">Olahraga &amp; Rekreasi</string>
+    <string name="cat_sport_sub">Turnamen, rekor &amp; permainan</string>
+    <string name="cat_food_title">Kuliner &amp; Minuman</string>
+    <string name="cat_food_sub">Seni masak &amp; cita rasa dunia</string>
+    <string name="cat_culture_title">Masyarakat &amp; Budaya</string>
+    <string name="cat_culture_sub">Tradisi, bahasa &amp; pemikiran</string>
+    <string name="cat_wikipedia_title">Wikipedia Harian</string>
+    <string name="cat_wikipedia_sub">Tantangan artikel acak harian</string>
+
+    <!-- Daily Wikipedia Carousel & AI Quiz -->
+    <string name="wiki_carousel_badge">Wikipedia Harian • %1$s</string>
+    <string name="wiki_loading">Menemukan artikel acak Wikipedia hari ini…</string>
+    <string name="wiki_offline_msg">Sambungkan internet untuk memuat artikel acak Wikipedia hari ini dalam bahasamu.</string>
+    <string name="wiki_error_msg">Belum dapat memuat artikel Wikipedia saat ini.</string>
+    <string name="wiki_quiz_cta">Main Kuis dari Artikel Ini</string>
+    <string name="wiki_read_article">Baca Ringkasan</string>
+    <string name="wiki_read_and_quiz_cta">Baca Artikel &amp; Main Kuis</string>
+    <string name="wiki_open_browser">Buka di browser</string>
+    <string name="wiki_start_quiz_after_read">Mulai Kuis Trivia</string>
+    <string name="wiki_loading_full_article">Memuat artikel lengkap Wikipedia…</string>
+    <string name="wiki_read_time">~%1$d mnt baca</string>
+    <string name="wiki_read_then_quiz_hint">Baca artikel lengkap di bawah ini, lalu ketuk Mulai Kuis Trivia untuk menjawab seluruh pertanyaannya.</string>
+    <string name="wiki_article_counter">%1$d / %2$d</string>
+    <string name="wiki_generating_quiz">Membuat soal kuis dari \"%1$s\"…</string>
+    <string name="wiki_generating_generic">Membuat soal kuis Wikipedia…</string>
+    <string name="wiki_article_not_found">Artikel Wikipedia tidak ditemukan di cache. Silakan kembali dan muat ulang.</string>
+    <string name="close_button">Tutup</string>
+
+    <!-- Difficulty, Theme, Language, Avatars, Sort -->
+    <string name="difficulty_label">Tingkat Kesulitan</string>
+    <string name="diff_all">Semua Tingkat</string>
+    <string name="diff_easy">Mudah</string>
+    <string name="diff_medium">Sedang</string>
+    <string name="diff_hard">Sulit</string>
+
+    <string name="theme_system">Otomatis</string>
+    <string name="theme_light">Terang</string>
+    <string name="theme_dark">Gelap</string>
+
+    <string name="lang_system">Otomatis</string>
+    <string name="lang_en">English</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_in">Indonesia</string>
+    <string name="language_label">Bahasa Aplikasi</string>
+
+    <string name="avatar_compass">Kompas</string>
+    <string name="avatar_owl">Burung Hantu</string>
+    <string name="avatar_telescope">Pengamat Bintang</string>
+    <string name="avatar_globe">Kartografer</string>
+    <string name="avatar_quill">Pengarsip</string>
+    <string name="avatar_atom">Alkemis</string>
+
+    <string name="sort_total_score">Total Skor</string>
+    <string name="sort_high_score">Ronde Terbaik</string>
+    <string name="sort_best_streak">Beruntun Terbaik</string>
+
+    <!-- Quiz & Guess Mode & Explanations -->
+    <string name="leave_expedition_title">Keluar dari Ekspedisi?</string>
+    <string name="leave_expedition_msg">Progres ronde ini tidak akan tersimpan jika kamu keluar sekarang.</string>
+    <string name="leave_button">Keluar</string>
+    <string name="keep_playing_button">Lanjut Main</string>
+    <string name="preparing_questions">Menyiapkan soal...</string>
+    <string name="no_questions_error">Belum ada soal yang tersedia untuk filter ini.</string>
+    <string name="offline_disabled_error">Mode Offline dimatikan. Sambungkan ke internet atau aktifkan Mode Offline di Profil.</string>
+    <string name="library_empty_error">Pustaka offline kosong. Segarkan pustaka di Profil atau sambungkan internet untuk bermain langsung.</string>
+    <string name="live_fetch_error">Tidak dapat mengambil soal langsung saat ini. Periksa koneksimu atau nyalakan Mode Offline di Profil.</string>
+    <string name="back_button">Kembali</string>
+    <string name="retry_button">Coba Lagi</string>
+    <string name="pts_badge">%1$d poin</string>
+    <string name="guess_multiplier_badge">Tebak • 1.5x</string>
+    <string name="offline_badge">Offline</string>
+    <string name="correct_plus_pts">Benar! +%1$d poin</string>
+    <string name="times_up">Waktu habis!</string>
+    <string name="not_quite">Kurang tepat</string>
+    <string name="answer_label">Jawaban: %1$s</string>
+    <string name="finish_view_explanations">Selesai &amp; Lihat Penjelasan</string>
+    <string name="next_question">Soal Berikutnya</string>
+    <string name="type_your_answer">Ketik jawabanmu</string>
+    <string name="enter_best_guess">Masukkan tebakan terbaikmu...</string>
+    <string name="hint_button">Petunjuk</string>
+    <string name="hint_shown">Petunjuk Ditampilkan</string>
+    <string name="submit_guess">Kirim Tebakan</string>
+    <string name="pass_button">Lewati</string>
+    <string name="expedition_complete">Ekspedisi Selesai</string>
+    <string name="points_earned_caps">POIN DIPEROLEH</string>
+    <string name="stat_correct">Benar</string>
+    <string name="stat_accuracy">Akurasi</string>
+    <string name="stat_streak">Beruntun</string>
+    <string name="stat_time">Waktu</string>
+    <string name="score_synced_cloud">Skor tersinkronisasi ke profil &amp; papan peringkat global.</string>
+    <string name="score_queued_offline">Tersimpan offline! Akan disinkronkan saat online.</string>
+    <string name="score_saved_guest">Dimainkan dalam Mode Tamu — tersimpan di perangkat ini. Masuk kapan saja untuk peringkat global.</string>
+    <string name="score_saved_local">Tersimpan secara lokal.</string>
+    <string name="play_again">Main Lagi</string>
+    <string name="back_to_atlas">Kembali ke Atlas</string>
+    <string name="question_explanations_title">Penjelasan Soal</string>
+    <string name="filter_all_count">Semua (%1$d)</string>
+    <string name="filter_missed_count">Salah (%1$d)</string>
+    <string name="flawless_round_msg">Ronde sempurna! Tidak ada satu pun soal yang salah.</string>
+    <string name="status_timed_out">Waktu Habis</string>
+    <string name="status_missed">Salah</string>
+    <string name="your_answer_label">Jawabanmu: %1$s</string>
+    <string name="correct_answer_label">Jawaban benar: %1$s</string>
+    <string name="explanation_caps">PENJELASAN</string>
+
+    <!-- Leaderboard -->
+    <string name="leaderboard_title">Papan Peringkat Global</string>
+    <string name="leaderboard_subtitle">Penjelajah terbaik di seluruh Trivia Atlas.</string>
+    <string name="leaderboard_guest_title">Bersaing di Papan Peringkat Global</string>
+    <string name="leaderboard_guest_body">Kamu dapat memainkan Mode Kuis, Mode Tebak, dan Atlas Gambar secara bebas tanpa mendaftar. Masuk dengan Google kapan pun untuk mengunggah skormu.</string>
+    <string name="no_ranks_yet">Belum Ada Peringkat Tercatat</string>
+    <string name="no_ranks_body">Selesaikan ekspedisi pertamamu untuk merebut peringkat #1 di papan global.</string>
+    <string name="your_standing">Peringkatmu • %1$s</string>
+    <string name="rounds_accuracy_line">%1$d ronde • %2$d%% akurasi</string>
+    <string name="best_suffix">%1$d terbaik</string>
+
+    <!-- Profile & Settings -->
+    <string name="profile_title">Profil Penjelajah</string>
+    <string name="guest_handle">tamu_lokal</string>
+    <string name="guest_bio">Bermain bebas tanpa daftar. Progres tersimpan di perangkat ini.</string>
+    <string name="guest_sync_title">Sinkronkan Antar Perangkat</string>
+    <string name="guest_sync_desc">Masuk dengan Google untuk profil cloud kustom dan peringkat global.</string>
+    <string name="specialty_label">Spesialisasi: %1$s</string>
+    <string name="personal_progress">Progres Pribadi</string>
+    <string name="metric_total_score">Total Skor</string>
+    <string name="metric_high_score">Skor Tertinggi</string>
+    <string name="metric_accuracy">Akurasi</string>
+    <string name="metric_rounds">Ronde</string>
+    <string name="metric_best_streak">Beruntun Terbaik</string>
+    <string name="metric_cached_qs">Soal Offline</string>
+    <string name="pending_sync_notice">%1$d sesi offline mengantre untuk disinkronkan otomatis.</string>
+    <string name="appearance_and_play">Tampilan &amp; Permainan</string>
+    <string name="theme_mode_label">Mode Tema</string>
+    <string name="countdown_timer_title">Penghitung Waktu Soal</string>
+    <string name="countdown_timer_sub">Dapatkan poin bonus kecepatan di ronde berwaktu</string>
+    <string name="recent_expeditions">Ekspedisi Terbaru</string>
+    <string name="no_sessions_yet">Ronde trivia yang selesai akan muncul di sini.</string>
+    <string name="session_summary_line">%1$d/%2$d benar • beruntun %3$dx%4$s</string>
+    <string name="customize_profile">Ubah Profil</string>
+    <string name="choose_emblem">Pilih Lambang</string>
+    <string name="display_name_hint">Nama Tampilan (2-30 karakter)</string>
+    <string name="handle_hint">Nama Pengguna (2-24 karakter)</string>
+    <string name="bio_hint">Bio (maks. 140 karakter)</string>
+    <string name="favorite_category_label">Kategori Favorit</string>
+    <string name="save_button">Simpan</string>
+    <string name="cancel_button">Batal</string>
+    <string name="ok_button">OK</string>
+    <string name="profile_updated">Profil diperbarui</string>
+    <string name="offline_mode_toggle_title">Mode Offline</string>
+    <string name="offline_mode_toggle_sub">Gunakan pustaka lokal saat offline atau cadangan (matikan agar soal langsung lebih bervariasi)</string>
+    <string name="refresh_library_button">Segarkan</string>
+    <string name="delete_library_button">Hapus Semua</string>
+    <string name="delete_library_confirm_title">Hapus Pustaka Offline?</string>
+    <string name="delete_library_confirm_msg">Ini akan menghapus semua %1$d soal tersimpan dari perangkatmu. Kamu dapat memulihkannya kapan saja dengan Segarkan.</string>
+    <string name="confirm_delete_button">Hapus Semua</string>
+    <string name="feedback_offline_mode_on">Mode Offline aktif — pustaka lokal digunakan</string>
+    <string name="feedback_offline_mode_off">Mode Offline nonaktif — mode variasi langsung aktif</string>
+    <string name="feedback_library_deleted">Pustaka offline berhasil dikosongkan</string>
+    <string name="feedback_library_refreshed">Pustaka disegarkan (%1$d soal siap)</string>
+
+    <!-- Battle Mode -->
+    <string name="nav_battle">Battle</string>
+    <string name="battle_hub_title">Arena Battle</string>
+    <string name="battle_hub_subtitle">Tantang teman di room bersama dengan topik &amp; soal yang sama persis.</string>
+    <string name="battle_guest_title">Masuk untuk Battle Multipemain</string>
+    <string name="battle_guest_body">Tantang banyak teman di room yang sama lewat Kode Room atau undangan langsung. Masuk dengan Google agar teman bisa menemukan &amp; mengundangmu.</string>
+    <string name="battle_create_room_cta">Buat Room Battle Baru</string>
+    <string name="battle_home_banner_title">Mode Battle Teman</string>
+    <string name="battle_home_banner_sub">Buat room, pilih topik &amp; adu skor dengan soal yang sama</string>
+    <string name="battle_open_arena">Buka Arena</string>
+    <string name="battle_join_code_title">Gabung via Kode Room</string>
+    <string name="battle_room_code_hint">Masukkan kode 6 karakter (mis. K7M9PQ)</string>
+    <string name="battle_join_button">Gabung</string>
+    <string name="battle_incoming_invites_title">Undangan Langsung (%1$d)</string>
+    <string name="battle_invite_from">%1$s mengundangmu ke Room %2$s</string>
+    <string name="battle_accept_button">Terima</string>
+    <string name="battle_decline_button">Tolak</string>
+    <string name="battle_my_rooms_title">Room Battle Kamu</string>
+    <string name="battle_no_rooms_title">Belum Ada Room Battle Aktif</string>
+    <string name="battle_no_rooms_body">Buat room dan pilih topik favoritmu, atau masukkan kode room teman di atas untuk mulai bertanding.</string>
+    <string name="battle_status_waiting">Lobi Terbuka</string>
+    <string name="battle_status_active">Sedang Berlangsung</string>
+    <string name="battle_status_finished">Selesai</string>
+    <string name="battle_players_count">%1$d pemain</string>
+    <string name="battle_topics_count">%1$d topik • %2$d Soal</string>
+    <string name="battle_setup_dialog_title">Buat Room Battle</string>
+    <string name="battle_pick_topics_label">Pilih Topik (Pilihan Host)</string>
+    <string name="battle_questions_label">Jumlah Soal</string>
+    <string name="battle_invite_friends_optional">Undang Teman Langsung (Opsional)</string>
+    <string name="battle_no_friends_available">Bagikan Kode Room setelah dibuat agar teman bisa langsung bergabung.</string>
+    <string name="battle_create_and_open">Buat Room</string>
+    <string name="battle_creating_room">Menyiapkan paket soal bersama…</string>
+    <string name="battle_error_code_invalid">Masukkan kode room yang valid (4–12 karakter).</string>
+    <string name="battle_error_room_not_found">Room battle tidak ditemukan. Periksa kembali kodenya.</string>
+    <string name="battle_error_already_started">Pertandingan ini sudah dimulai dan terkunci untuk pemain baru.</string>
+    <string name="battle_error_room_full">Room battle sudah penuh (maksimal 12 pemain).</string>
+    <string name="battle_error_generic">Gagal memproses aksi battle. Coba lagi.</string>
+
+    <!-- Battle Room Lobby & Arena -->
+    <string name="battle_room_code_label">KODE ROOM</string>
+    <string name="battle_copy_code">Salin Kode</string>
+    <string name="battle_share_code">Bagikan</string>
+    <string name="battle_code_copied">Kode room %1$s disalin!</string>
+    <string name="battle_share_text">Ayo gabung ke Room Battle Trivia Atlas-ku! Kode: %1$s</string>
+    <string name="battle_host_badge">Host</string>
+    <string name="battle_you_badge">Kamu</string>
+    <string name="battle_roster_title">Penantang (%1$d / 12)</string>
+    <string name="battle_start_button">Mulai Battle untuk Semua</string>
+    <string name="battle_waiting_host_msg">Menunggu %1$s memulai battle…</string>
+    <string name="battle_invite_friends_header">Undangan Teman Langsung</string>
+    <string name="battle_invite_button">Undang</string>
+    <string name="battle_invited_chip">Diundang</string>
+    <string name="battle_joined_chip">Di Room</string>
+    <string name="battle_leave_room_title">Keluar dari Room Battle?</string>
+    <string name="battle_leave_room_host_msg">Sebagai host, keluar dari lobi akan menutup room tunggu untuk semua orang.</string>
+    <string name="battle_leave_room_player_msg">Keluar dari lobi tunggu dan kembali ke Arena Battle?</string>
+    <string name="battle_leave_active_msg">Keluar saat battle menjeda progres langsungmu. Skormu sejauh ini tetap tercatat di room.</string>
+    <string name="battle_live_standings">Klasemen Langsung</string>
+    <string name="battle_podium_title">Hasil Battle</string>
+    <string name="battle_waiting_others">Menunggu %1$d penantang lain selesai…</string>
+    <string name="battle_all_finished">Semua penantang selesai! Penjelasan bersama ada di bawah.</string>
+    <string name="battle_progress_chip">%1$d/%2$d Soal</string>
+    <string name="battle_finished_badge">Selesai</string>
+    <string name="battle_lock_results_button">Tutup Room Sekarang</string>
+    <string name="battle_room_closed">Room battle ini sudah ditutup atau tidak ditemukan.</string>
+    <string name="custom_api_key_title">Kunci API Gemini Kustom</string>
+    <string name="custom_api_key_sub">Gunakan kunci API Gemini milikmu sendiri untuk membuat kuis Wikipedia dengan AI</string>
+    <string name="custom_api_key_hint">Masukkan Kunci API Gemini (AIzaSy...)</string>
+    <string name="custom_api_key_saved">Kunci API Gemini berhasil disimpan</string>
+
+    <!-- Wikipedia Own AI Quiz Builder -->
+    <string name="wiki_own_ai_sheet_title">Buat Kuis Dengan AI Milikmu Sendiri</string>
+    <string name="wiki_own_ai_sheet_subtitle">Pilih cara mengubah \"%1$s\" menjadi soal kuis menggunakan akun AI pribadimu atau mode instan.</string>
+    <string name="wiki_ai_option_gemini_title">Kunci API Gemini Pribadimu</string>
+    <string name="wiki_ai_option_gemini_sub">Memanggil Google Gemini langsung dari perangkatmu dengan kuncimu sendiri (tanpa tagihan server).</string>
+    <string name="wiki_ai_key_input_label">Kunci API Gemini (AIzaSy...)</string>
+    <string name="wiki_ai_save_generate_cta">Buat Kuis dengan Kunci Gemini-ku</string>
+    <string name="wiki_ai_option_prompt_title">Gunakan Aplikasi AI Apa Saja (Gemini, ChatGPT, Claude)</string>
+    <string name="wiki_ai_option_prompt_sub">Salin prompt artikel ini ke aplikasi AI favoritmu, lalu tempel balasan JSON-nya di bawah.</string>
+    <string name="wiki_ai_copy_prompt_cta">Salin Prompt</string>
+    <string name="wiki_ai_share_prompt_cta">Bagikan ke AI</string>
+    <string name="wiki_ai_prompt_copied">Prompt disalin! Tempel ke aplikasi AI-mu lalu salin kembali balasan JSON-nya.</string>
+    <string name="wiki_ai_paste_json_label">Tempel Balasan JSON dari AI di Sini</string>
+    <string name="wiki_ai_import_play_cta">Impor &amp; Mainkan Kuis AI</string>
+    <string name="wiki_ai_invalid_json">Tidak dapat membaca soal kuis yang valid dari teks tersebut. Pastikan kamu menempel JSON dari AI.</string>
+    <string name="wiki_ai_option_local_title">Kuis Artikel Instan (Tanpa Kunci)</string>
+    <string name="wiki_ai_option_local_sub">Mengambil tanggal, angka &amp; fakta penting langsung dari isi artikel sekarang.</string>
+    <string name="wiki_ai_local_play_cta">Mainkan Kuis Artikel Instan</string>
+    <string name="wiki_missing_api_key_error">Belum ada kunci API Gemini pribadi yang tersimpan. Masukkan kuncimu atau salin prompt untuk memakai AI milikmu sendiri.</string>
+
+    <!-- Lifetime Explorer Level & Weekly Ranking Reset -->
+    <string name="level_badge_short">Lv. %1$d</string>
+    <string name="level_title_card">Level Penjelajah</string>
+    <string name="level_lifetime_badge">Seumur Hidup</string>
+    <string name="level_xp_progress">%1$s / %2$s XP ke Lv. %3$d</string>
+    <string name="level_lifetime_total">Total XP Seumur Hidup: %1$s</string>
+    <string name="home_level_summary">Lv. %1$d • %2$s XP • %3$d%% akurasi</string>
+    <string name="weekly_ranking_title">Peringkat Minggu Ini</string>
+    <string name="metric_weekly_xp">XP Mingguan</string>
+    <string name="metric_lifetime_xp">XP Seumur Hidup</string>
+    <string name="metric_weekly_rounds">Ronde Minggu Ini</string>
+    <string name="ranking_reset_schedule">Reset Minggu 12:00 GMT</string>
+    <string name="ranking_resets_in_dh">Sisa %1$d hr %2$d jam</string>
+    <string name="ranking_resets_in_hm">Sisa %1$d jam %2$d mnt</string>
+    <string name="ranking_resets_in_ms">Sisa %1$d mnt %2$d dtk</string>
+    <string name="leaderboard_weekly_subtitle">Peringkat XP mingguan • Reset tiap Minggu pukul 12:00 GMT</string>
+    <string name="xp_badge">%1$s XP</string>
+    <string name="sort_weekly_xp">XP Mingguan</string>
+    <string name="weekly_no_ranks_yet">Musim Mingguan Baru Dimulai</string>
+    <string name="weekly_no_ranks_body">Peringkat global berakhir setiap Minggu pukul 12:00 GMT dan XP direset ke 0. Mainkan ronde untuk menjadi #1 minggu ini — Level Seumur Hidup tidak pernah direset!</string>
+    <string name="your_unranked_weekly">0 XP minggu ini • Mainkan kuis untuk masuk peringkat!</string>
+    <string name="quiz_xp_gained_note">+%1$s XP ditambahkan ke Lv. %2$d Seumur Hidup &amp; Peringkat Mingguan</string>
+
+    <!-- Kategori Teknologi -->
+    <string name="cat_technology_title">Teknologi</string>
+    <string name="cat_technology_sub">Komputasi, AI, gawai &amp; perangkat lunak</string>
+
+    <!-- Menu Kuis Wikipedia Instan tanpa Kunci API -->
+    <string name="wiki_instant_only_title">Kuis Artikel Instan</string>
+    <string name="wiki_instant_only_sub">Mainkan kuis instan yang dibuat langsung dari isi \"%1$s\". Kamu bisa menambahkan kunci API Gemini kapan saja di menu Profil.</string>
+
+    <!-- Aturan Room Battle XP -->
+    <string name="battle_rules_title">Aturan Room XP</string>
+    <string name="battle_rules_cd">Info Aturan XP Battle</string>
+    <string name="battle_rule_1">1. Jawaban benar: XP bertambah (+)</string>
+    <string name="battle_rule_2">2. Jawaban salah: XP berkurang (-)</string>
+    <string name="battle_rule_3">3. Tidak menjawab (waktu habis / lewati): 0 XP</string>
+    <string name="battle_rule_4">4. Peraih XP terbanyak menjadi pemenang</string>
+    <string name="battle_rule_5">5. Setiap soal berbatas waktu 30 detik — semakin cepat menjawab, semakin besar XP</string>
+    <string name="battle_rule_6">6. Kategori &amp; tingkat kesulitan soal ditentukan oleh host</string>
+    <string name="battle_rules_got_it">Mengerti</string>
+    <string name="battle_xp_badge">%1$d XP</string>
+    <string name="battle_wrong_minus_xp">Kurang tepat! %1$d XP</string>
+    <string name="battle_no_answer_zero_xp">Waktu habis! Tidak menjawab (0 XP)</string>
+    <string name="battle_pass_zero_xp">Dilewati — Tidak menjawab (0 XP)</string>
+    <string name="battle_status_no_answer">0 XP</string>
+    <string name="battle_host_fixed_notice">30 dtk / soal • Diatur host</string>
+
+    <!-- Rekor Harian & Pelindung Rekor -->
+    <string name="daily_streak_title">Rekor Harian</string>
+    <string name="daily_streak_count_badge">%1$d hr</string>
+    <string name="daily_streak_days_count">%1$d hari</string>
+    <string name="daily_streak_best">Terbaik: %1$d hari</string>
+    <string name="streak_freeze_title">Pelindung Rekor</string>
+    <string name="streak_freeze_count_ratio">%1$d / %2$d Siap</string>
+    <string name="streak_freeze_saved_today">Rekor terselamatkan oleh Pelindung hari ini!</string>
+    <string name="streak_daily_xp_progress">%1$s / %2$s XP hari ini untuk Pelindung baru</string>
+    <string name="streak_freeze_full_note">Pelindung Rekor penuh (3/3) siap!</string>
+    <string name="streak_how_to_earn">Dapatkan Pelindung (maks 3) dengan meraih 10.000+ XP sehari, menyelesaikan 3 target harian 3 hari beruntun, atau naik level.</string>
+    <string name="streak_checked_in_banner">Rekor Harian: %1$d hari berturut-turut!</string>
+    <string name="streak_frozen_saved_banner">Pelindung Rekor menyelamatkan rekor %1$d harimu! (Sisa %2$d)</string>
+    <string name="streak_freeze_earned_quiz_badge">+%1$d Pelindung Rekor Didapat!</string>
+
+    <!-- Kunci Gemini Khusus Perangkat & Pemilihan Model -->
+    <string name="custom_api_key_device_only_badge">Khusus Perangkat • Tersembunyi</string>
+    <string name="custom_api_key_saved_hidden">Kunci API tersimpan dan disembunyikan di perangkat ini. Tidak pernah keluar atau disinkronkan ke cloud.</string>
+    <string name="custom_api_key_replace_hint">Kunci tersembunyi — tempel kunci baru untuk mengganti</string>
+    <string name="custom_api_key_clear_button">Hapus Kunci</string>
+    <string name="custom_gemini_model_label">Model Gemini</string>
+    <string name="gemini_model_need_key">Simpan kunci API Gemini dulu untuk memuat model</string>
+    <string name="gemini_model_loading">Memuat model dari kunci API Anda…</string>
+    <string name="gemini_model_error_short">Gagal memuat model dari kunci API</string>
+    <string name="gemini_model_none_found">Tidak ada model yang kompatibel untuk kunci ini</string>
+    <string name="gemini_model_refresh_cd">Muat ulang daftar model Gemini</string>
+    <string name="wiki_start_ai_quiz_cta">Mulai Kuis AI (%1$s)</string>
+    <string name="wiki_start_ai_quiz_default">Mulai Kuis AI</string>
+    <string name="wiki_ai_auto_fallback_banner">Pengaturan Gemini AI gagal untuk artikel ini — beralih otomatis ke Kuis Artikel Instan.</string>
+    <string name="wiki_ai_active_badge">AI • %1$s</string>
+    <string name="wiki_instant_fallback_badge">Mode Instan Otomatis</string>
+
+    <!-- Pencarian Wikipedia & URL Artikel Kustom -->
+    <string name="wiki_search_hint">Cari artikel Wikipedia…</string>
+    <string name="wiki_open_url_cd">Buka URL artikel</string>
+    <string name="wiki_searching">Mencari di Wikipedia…</string>
+    <string name="wiki_search_empty">Tidak ada artikel yang cocok untuk \"%1$s\".</string>
+    <string name="wiki_search_error">Tidak dapat mencari Wikipedia saat ini.</string>
+    <string name="wiki_search_clear_cd">Hapus pencarian</string>
+    <string name="wiki_custom_url_dialog_title">Buka URL Artikel Kustom</string>
+    <string name="wiki_custom_url_dialog_sub">Tempel URL artikel Wikipedia atau web mana pun untuk dibaca dan dibuatkan kuis.</string>
+    <string name="wiki_custom_url_input_label">URL Artikel (https://...)</string>
+    <string name="wiki_custom_url_open_button">Buka &amp; Baca</string>
+    <string name="wiki_custom_url_loading">Mengambil teks artikel…</string>
+    <string name="wiki_custom_url_error_invalid">Masukkan alamat web yang valid (mis. https://contoh.com/artikel).</string>
+    <string name="wiki_custom_url_error_unreadable">Tidak dapat mengekstrak teks artikel yang dapat dibaca dari URL tersebut.</string>
+
+    <!-- Dialog Aturan Rekor Harian -->
+    <string name="streak_rules_info_cd">Aturan Rekor &amp; Pelindung Harian</string>
+    <string name="streak_rules_dialog_title">Cara Mendapat Pelindung Rekor</string>
+    <string name="streak_rules_intro">Buka Trivia Atlas setiap hari untuk menjaga Rekor Harianmu. Jika kamu melewatkan sehari, Pelindung Rekor (maks 3) otomatis menyelamatkan rekormu. Dapatkan Pelindung dari 3 tantangan ini:</string>
+    <string name="streak_rule_xp_10k">1. Kumpulkan 10.000+ XP dalam satu hari</string>
+    <string name="streak_rule_daily_objectives">2. Selesaikan semua 3 Target Harian selama 3 hari berturut-turut</string>
+    <string name="streak_rule_level_up">3. Capai Level Penjelajah baru</string>
+
+    <!-- 30 Skenario Target Harian -->
+    <string name="daily_objectives_title">Target Harian</string>
+    <string name="daily_objectives_progress_pill">%1$d / %2$d</string>
+    <string name="daily_objectives_streak_pill">%1$d / %2$d hari beruntun menuju Pelindung</string>
+    <string name="daily_objectives_streak_complete_pill">%1$d / %2$d hari • Pelindung Rekor didapat!</string>
+    <string name="daily_objective_done_badge">Selesai</string>
+    <string name="daily_objective_launch_cd">Mulai tantangan</string>
+    <string name="daily_objectives_completed_round_banner">Target Harian tercapai! (%1$d baru)</string>
+    <string name="obj_badge_speed">Cepat</string>
+    <string name="obj_badge_streak">Kombo</string>
+    <string name="obj_badge_xp">Target XP</string>
+    <string name="obj_badge_habit">Rutinitas</string>
+    <string name="obj_geo_10_10">Raih skor 10/10 di Geografi</string>
+    <string name="obj_sci_10_10">Raih skor 10/10 di Sains</string>
+    <string name="obj_his_10_10">Raih skor 10/10 di Sejarah</string>
+    <string name="obj_tech_10_10">Raih skor 10/10 di Teknologi</string>
+    <string name="obj_gk_10_10">Raih skor 10/10 di Pengetahuan Umum</string>
+    <string name="obj_arts_8_10">Raih 8+/10 di Seni &amp; Sastra</string>
+    <string name="obj_film_8_10">Raih 8+/10 di Film &amp; TV</string>
+    <string name="obj_music_8_10">Raih 8+/10 di Musik</string>
+    <string name="obj_sport_8_10">Raih 8+/10 di Olahraga &amp; Hiburan</string>
+    <string name="obj_food_8_10">Raih 8+/10 di Makanan &amp; Minuman</string>
+    <string name="obj_culture_8_10">Raih 8+/10 di Sosial &amp; Budaya</string>
+    <string name="obj_hard_mix_70">Selesaikan Atlas Mix Sulit (10 soal) akurasi 70%+</string>
+    <string name="obj_hard_sci_80">Selesaikan Sains Sulit (5+ soal) akurasi 80%+</string>
+    <string name="obj_hard_his_80">Selesaikan Sejarah Sulit (5+ soal) akurasi 80%+</string>
+    <string name="obj_speed_geo_90">Selesaikan Geografi 10 soal (6+ benar) di bawah 90 dtk</string>
+    <string name="obj_speed_tech_90">Selesaikan Teknologi 10 soal (6+ benar) di bawah 90 dtk</string>
+    <string name="obj_streak_mix_7">Capai kombo 7+ jawaban benar di Atlas Mix</string>
+    <string name="obj_streak_any_10">Capai kombo sempurna 10x dalam ronde 10 soal</string>
+    <string name="obj_pic_8_10">Raih 8+/10 di Atlas Gambar</string>
+    <string name="obj_pic_10_10">Raih skor sempurna 10/10 di Atlas Gambar</string>
+    <string name="obj_pic_guess_70">Capai akurasi 70%+ di Tebak Gambar</string>
+    <string name="obj_guess_mix_6">Jawab 6+/10 benar di Mode Tebak Atlas Mix</string>
+    <string name="obj_guess_geo_no_hint">Jawab 5+ Mode Tebak Geografi tanpa bantuan</string>
+    <string name="obj_guess_sci_70">Selesaikan Mode Tebak Sains (5+ soal) akurasi 70%+</string>
+    <string name="obj_wiki_70">Mainkan Kuis Wikipedia Harian dengan akurasi 70%+</string>
+    <string name="obj_wiki_100">Raih akurasi 100% di Kuis Wikipedia Harian</string>
+    <string name="obj_xp_round_1200">Raih 1.200+ XP dalam satu ronde Geografi atau Sejarah</string>
+    <string name="obj_xp_hard_1500">Raih 1.500+ XP dalam satu ronde Sulit</string>
+    <string name="obj_rounds_2_today">Selesaikan 2 ronde kuis hari ini</string>
+    <string name="obj_daily_xp_3000">Kumpulkan total 3.000+ XP hari ini</string>
+
+    <!-- Pencarian Wikipedia & URL Kustom di Battle -->
+    <string name="battle_source_label">Sumber Pertanyaan</string>
+    <string name="battle_source_topics">Topik</string>
+    <string name="battle_source_wikipedia">Cari Wikipedia</string>
+    <string name="battle_source_custom_url">URL Kustom</string>
+    <string name="battle_wiki_search_hint">Cari artikel Wikipedia mana saja…</string>
+    <string name="battle_selected_article_badge">Artikel Battle Terpilih</string>
+    <string name="battle_load_url_button">Muat</string>
+    <string name="battle_article_quiz_note">Soal dibuat langsung dari artikel ini (memakai kunci Gemini AI jika tersimpan, atau Kuis Artikel Instan) — sama untuk semua pemain.</string>
+    <string name="battle_error_article_quiz">Gagal membuat soal battle dari artikel tersebut. Coba artikel atau URL lain.</string>
+    <string name="battle_pick_or_load_article">Cari dan pilih artikel atau muat URL yang valid terlebih dahulu.</string>
+
+    <!-- Tentang Trivia Atlas -->
+    <string name="about_section_title">Tentang</string>
+    <string name="about_version_badge">v%1$s</string>
+    <string name="about_developer_label">Pengembang</string>
+    <string name="about_developer_name">brillian11</string>
+    <string name="about_repository_label">Repositori GitHub</string>
+    <string name="about_repository_url">https://github.com/brillian11/trivia-atlas</string>
+    <string name="about_summary_body">Jelajahi kuis pilihan, kuis artikel Wikipedia, Atlas Gambar, dan Battle teman secara real-time — online maupun offline.</string>
+    <string name="about_open_window_cta">API, Kunci &amp; Repositori</string>
+    <string name="about_dialog_title">Tentang Trivia Atlas</string>
+    <string name="about_apis_section">API &amp; Kebutuhan Kunci API</string>
+    <string name="about_api_trivia_title">The Trivia API &amp; OpenTDB</string>
+    <string name="about_api_trivia_desc">the-trivia-api.com • opentdb.com — Sumber kuis live multi-kategori. Tidak perlu kunci API.</string>
+    <string name="about_api_wiki_title">Wikipedia MediaWiki &amp; Google Translate</string>
+    <string name="about_api_wiki_desc">*.wikipedia.org/w/api.php • translate.googleapis.com — Artikel harian, pencarian, Atlas Gambar &amp; terjemahan. Tidak perlu kunci API.</string>
+    <string name="about_api_gemini_title">Google Gemini API (BYOK)</string>
+    <string name="about_api_gemini_desc">generativelanguage.googleapis.com/v1beta — Kunci pribadi opsional (AIzaSy…) disimpan khusus di perangkat untuk kuis Wikipedia &amp; URL Kustom, otomatis kembali ke Kuis Instan jika gagal.</string>
+    <string name="about_api_firebase_title">Firebase Auth, Cloud Firestore &amp; App Check</string>
+    <string name="about_api_firebase_desc">Dikonfigurasi lewat google-services.json &amp; Credential Manager untuk Login Google, Peringkat Mingguan, dan Ruang Battle.</string>
+    <string name="about_repos_section">Pustaka &amp; Repositori Inti</string>
+    <string name="about_repos_list">Jetpack Compose (Material 3) • Navigation Compose • Room &amp; DataStore • Retrofit, OkHttp &amp; Moshi • Coil • Kotlin Coroutines &amp; KSP • Firebase Android SDK • Robolectric</string>
+    <string name="about_open_github_cd">Buka repositori GitHub</string>
+    <string name="about_license_footer">Lisensi MIT • Dibuat oleh brillian11</string>
+</resources>

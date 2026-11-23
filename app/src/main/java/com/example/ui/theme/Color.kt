@@ -1,0 +1,61 @@
+package com.example.ui.theme
+
+import androidx.compose.ui.graphics.Color
+
+// Editorial Botanical Atlas — Light Palette
+val AtlasPaper = Color(0xFFFAF8F3)
+val AtlasParchment = Color(0xFFF1ECE1)
+val AtlasCardLight = Color(0xFFFFFFFF)
+val AtlasEmerald = Color(0xFF1B4D3E)
+val AtlasOnEmerald = Color(0xFFFFFFFF)
+val AtlasEmeraldContainer = Color(0xFFD2EBE1)
+val AtlasOnEmeraldContainer = Color(0xFF0A2920)
+val AtlasTerracotta = Color(0xFFC85A3A)
+val AtlasOnTerracotta = Color(0xFFFFFFFF)
+val AtlasTerracottaContainer = Color(0xFFFFDFD6)
+val AtlasOnTerracottaContainer = Color(0xFF4A180B)
+val AtlasOchre = Color(0xFFD49B35)
+val AtlasOchreContainer = Color(0xFFFAECD0)
+val AtlasOnOchreContainer = Color(0xFF3E2904)
+val AtlasInk = Color(0xFF1A1F1C)
+val AtlasSlate = Color(0xFF5A635E)
+val AtlasOutlineLight = Color(0xFFDAD3C5)
+
+// Editorial Botanical Atlas — Comfortable Nighttime Dark Palette
+val NightInk = Color(0xFF101513)
+val NightSlate = Color(0xFF171F1C)
+val NightCard = Color(0xFF1F2925)
+val NightSage = Color(0xFF7ED4B8)
+val NightOnSage = Color(0xFF072B20)
+val NightSageContainer = Color(0xFF1A4538)
+val NightOnSageContainer = Color(0xFFC8F3E4)
+val NightCoral = Color(0xFFF08C6D)
+val NightOnCoral = Color(0xFF441609)
+val NightCoralContainer = Color(0xFF5A2718)
+val NightOnCoralContainer = Color(0xFFFFDAD0)
+val NightGold = Color(0xFFEAC16D)
+val NightGoldContainer = Color(0xFF473712)
+val NightOnGoldContainer = Color(0xFFFAE6B8)
+val NightIvory = Color(0xFFF0EDE6)
+val NightMuted = Color(0xFF99A59F)
+val NightOutline = Color(0xFF2E3B35)
+
+// Semantic Feedback Colors
+val CorrectGreenLight = Color(0xFF1F7A52)
+val CorrectGreenDark = Color(0xFF66D19E)
+val IncorrectRedLight = Color(0xFFB83B2E)
+val IncorrectRedDark = Color(0xFFF28277)
+
+// Category Illustration Accents
+val CatScience = Color(0xFF2D6A74)
+val CatHistory = Color(0xFF9E5A3C)
+val CatGeography = Color(0xFF2E7D5B)
+val CatArts = Color(0xFF8C4A6E)
+val CatFilm = Color(0xFF5A528C)
+val CatMusic = Color(0xFFB8742A)
+val CatSport = Color(0xFF3B6E9C)
+val CatFood = Color(0xFFC45B4B)
+val CatCulture = Color(0xFF6D6A46)
+val CatGeneral = Color(0xFF1B4D3E)
+val CatPicture = Color(0xFF7A4B94)
+val CatTechnology = Color(0xFF0E7490)
